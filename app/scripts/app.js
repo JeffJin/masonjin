@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('masonjinApp', [
+angular.module('keenerApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
@@ -11,6 +11,10 @@ angular.module('masonjinApp', [
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
+      })
+      .when('/workspaces', {
+        templateUrl: 'views/workspaces.html',
+        controller: 'WorkspacesCtrl'
       })
       .otherwise({
         redirectTo: '/'
